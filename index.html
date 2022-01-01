@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of Amazons</title>
+    <style>
+        canvas {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border: 5px solid #373737;
+            background-color: #333;
+        }
+        body {
+            background-color: #1D1D1D;
+            margin-left: auto;
+            margin-right: auto;
+            width: 92%;
+            max-width: 960px;
+            padding-left: 2.275%;
+            padding-right: 2.275%;
+        }
+        header {
+            text-align: center;
+            display: block;
+            color: #746e83;
+        }
+    </style>
+</head>
+<body onload="start()">
+    <img id="light" width="50" height="50" src="./lightSquare.png" alt="light">
+    <img id="dark" width="50" height="50" src="./darkSquare.png" alt="dark">
+    <img id="queen1" width="50" height="50" src="./queen.png" alt="queen1">
+    <img id="queen2" width="50" height="50" src="./spookqueen.png" alt="queen2">
+    <img id="arrow" width="50" height="50" src="./fire.png" alt="arrow">
+    <header><div><p id="turnIndicator"> </p></div></header>
+    <header><div><p id="winIndicator"> </p></div></header>
+    <canvas id="gameArea" width="500" height="500" onclick="clientClick(event)"></canvas>
+    <script src="amz.js"></script>
+</body>
+</html>
